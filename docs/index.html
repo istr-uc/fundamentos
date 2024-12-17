@@ -1,0 +1,835 @@
+<!DOCTYPE HTML PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=ISO-8859-1">
+  <meta name="Author" content="Michael Gonzalez">
+  <meta name="GENERATOR"
+ content="Mozilla/4.76 [en] (Windows NT 5.0; U) [Netscape]">
+  <title>fundamentos</title>
+  <meta content="michael gonzalez harbour" name="author">
+  <meta content="clases para entrada/salida sencilla en java"
+ name="description">
+</head>
+<body>
+<center>
+<h1>Paquete fundamentos</h1>
+</center>
+<center>
+<h2>Versi&oacute;n 3.5</h2>
+</center>
+<center>
+<h2>Clases sencillas para entrada/salida gr&aacute;fica en Java</h2>
+</center>
+<center><b><tt><font size="+2"><a
+ href="http://www.istr.unican.es/fundamentos/">http://www.istr.unican.es/fundamentos/</a></font></tt></b>
+<p>(c) Universidad de Cantabria, SPAIN
+</p>
+<p>Autores: Michael Gonz&aacute;lez&nbsp; <a
+ href="mailto:mgh@unican.es">mgh@unican.es</a> y Mariano Benito Hoz
+&lt;mbenitohoz at gmail dot com&gt;<br>
+</p>
+</center>
+<p>El paquete <a href="javadocs/index.html">fundamentos</a>
+es
+software
+libre; puedes redistribuirlo o modificarlo bajo los t&eacute;rminos de
+la Licencia General P&uacute;blica de GNU (<a
+ href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>), publicada por
+la Free
+Software Foundation. Algunas de las clases est&aacute;n basadas en el
+paquete
+javagently, cuya autora es Judy Bishop, y que se distribuye con su
+libro
+&#8220;Java Gently&#8221;. Addison Wesley, 1998. <br>
+<br>
+&nbsp;
+</p>
+<ol>
+  <li> <a href="#Introduction">Introducci&oacute;n</a></li>
+  <li> <a href="#2.%20Input_Windows">Lectura</a></li>
+  <li> <a href="#3.">Escritura</a></li>
+  <li> <a href="#4.">Mensaje</a></li>
+  <li><a href="#mensajesino">MensajeSiNo</a><br>
+  </li>
+  <li> <a href="#5.">Menu</a></li>
+  <li> <a href="#6.">Dibujo</a></li>
+  <li> <a href="#7.">Grafica</a></li>
+  <li><a href="#8._CajaTexto">CajaTexto</a><br>
+  </li>
+  <li> <a href="#Changes">Cambios respecto a versiones previas</a></li>
+  <li> <a href="#Installation">Descarga e instalaci&oacute;n</a></li>
+</ol>
+<h1>
+1.&nbsp;<a name="Introduction"></a>Introducci&oacute;n</h1>
+El paquete <span style="font-style: italic;">fundamentos</span> es un
+conjunto de clases para entrada/salida
+gr&aacute;fica.
+Est&aacute; dise&ntilde;ado para principiantes de Java que no desean
+gastar
+mucho tiempo en aprender la interfaz gr&aacute;fica completa de java,
+pero
+que quieren poder hacer programas vistosos con entrada/salida
+gr&aacute;fica.
+<p>El paquete <span style="font-style: italic;">fundamentos</span> se
+compone de los siguientes m&oacute;dulos:
+<br>
+&nbsp;
+<table style="width: 100%;" border="1" cellpadding="6">
+  <tbody>
+    <tr>
+      <td><a href="#2.%20Input_Windows">Lectura</a></td>
+      <td>Proporciona una ventana simple con capacidad de lectura de
+datos de
+los tipos entero, real y String.
+      <p>Se pueden representar y leer m&uacute;ltiples datos en la
+misma ventana.
+Adem&aacute;s, se puede poner un mensaje en la parte superior de la
+ventana.</p>
+      </td>
+      <td style="text-align: center;"><img src="lectura.gif" width="402"
+ height="421"></td>
+    </tr>
+    <tr>
+      <td><a href="#3.">Escritura</a></td>
+      <td>Proporciona una ventana simple con capacidad de mostrar datos
+de los
+tipos entero, real y String.
+      <p>Se pueden representar varios datos en la misma ventana. Cada
+dato va
+acompa&ntilde;ado de una etiqueta. Tiene un boton OK para cerrar la
+ventana.</p>
+      </td>
+      <td style="text-align: center;"><img src="escritura.gif"
+ width="402" height="421"></td>
+    </tr>
+    <tr>
+      <td><a href="#4.">Mensaje</a></td>
+      <td>Proporciona una ventana simple para mostrar un mensaje corto.
+Tiene
+un boton OK para cerrar la ventana.</td>
+      <td>
+      <center><img src="mensaje.gif" width="302" height="121"></center>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="#mensajesino">MensajeSiNo</a></td>
+      <td style="vertical-align: top;">Proporciona una ventana simple
+para hacer una pregunta. Tiene un bot&oacute;n para responder "Si" y
+otro para responder "No"<br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><img
+ style="width: 271px; height: 131px;" alt="mensajesino"
+ src="mensajesino.gif"><br>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#5.">Menu</a></td>
+      <td>Proporciona una ventana simple con varios botones, donde se
+permite
+al usuario elegir una de entre varias opciones.&nbsp;</td>
+      <td>
+      <center><img src="menu.gif" width="399" height="421"></center>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#6.">Dibujo</a></td>
+      <td>Proporciona una ventana simple en la que se pueden dibujar
+figuras
+geom&eacute;tricas as&iacute; como representar im&aacute;genes</td>
+      <td>
+      <center><img src="dibujo.gif" width="482" height="321"></center>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="#7.">Grafica</a></td>
+      <td>Proporciona una ventana simple para dibujar gr&aacute;ficos
+bidimenisonales
+a partir de un conjunto de puntos.</td>
+      <td>
+      <center><img src="grafica-small.gif" width="400" height="333"></center>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;"><a href="#8._CajaTexto">CajaTexto</a><br>
+      </td>
+      <td style="vertical-align: middle;">Proporciona una ventana para
+lectura de texto multil&iacute;nea. El texto se puede leer como
+l&iacute;neas individuales, as&iacute; como n&uacute;meros enteros o
+reales simples o dispuestos en varias columnas<br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><img
+ alt="CajaTexto.gif" src="cajatexto.gif"
+ style="width: 437px; height: 371px;"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+&nbsp;
+</p>
+<h1><a name="2. Input_Windows"></a>2. Lectura</h1>
+Los objetos de la clase Lectura proporcionan:
+<ul>
+  <li>Un &aacute;rea para escribir texto, y as&iacute; poder mostrar
+mensajes
+o resultados</li>
+  <li>Una zona con barras de desplazamiento donde se pueden crear
+muchas
+cajas
+para entrada/salida de datos. Cada caja tiene una etiqueta y un
+&aacute;rea
+editable que se usa para mostrar y/o modificar un valor del tipo
+Integer,
+Float, o String</li>
+  <li>Un boton de "Aceptar" mediante el que el usuario indica que ha
+terminado
+de editar los datos</li>
+  <li>Un bot&oacute;n "Cancelar" que cierra la aplicaci&oacute;n.</li>
+</ul>
+La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/Lectura.html">Lectura.java</a>.
+<p>Un ejemplo del uso de esta clase se puede encontrar en: <a
+ href="PruebaLecturaEscritura.java.html">Ejemplo
+con Lectura/Escritura</a>.
+</p>
+<p>Resumen de las operaciones de Lectura.java:
+<br>
+&nbsp;
+<table width="100%" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>&nbsp;new Lectura (titulo)</td>
+      <td>Constructor, con el t&iacute;tulo de la ventana</td>
+    </tr>
+    <tr>
+      <td>&nbsp;println (string)</td>
+      <td>Muestra un string en la cabecera .</td>
+    </tr>
+    <tr>
+      <td>&nbsp;creaEntrada (etiqueta, valor)</td>
+      <td>Crea una caja para leer un valor; el valor puede ser double,
+int o
+String.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;espera (mensaje)</td>
+      <td>Muestra un mensaje, y espera a que el usuario teclee datos y
+pulse
+aceptar.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;esperaYCierra (mensaje)</td>
+      <td>Igual que espera, pero ademas cierra la ventana al aceptar</td>
+    </tr>
+    <tr>
+      <td>&nbsp;espera ()</td>
+      <td>Espera a que el usuario teclee datos y pulse aceptar.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;esperaYCierra ()</td>
+      <td>Igual que espera, pero ademas cierra la ventana al aceptar.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;leeDouble (etiqueta)</td>
+      <td>Lee un double de la caja con esa etiqueta</td>
+    </tr>
+    <tr>
+      <td>&nbsp;leeInt (etiqueta)</td>
+      <td>Lee un int de la caja con esa etiqueta</td>
+    </tr>
+    <tr>
+      <td>&nbsp;leeString (etiqueta)</td>
+      <td>Lee un String de la caja con esa etiqueta</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<h1><a name="3."></a>3. Escritura</h1>
+&nbsp;Los objetos de la clase Escritura proporcionan:
+<ul>
+  <li>Una zona con barras de desplazamiento donde se pueden crear
+muchas
+cajas
+para salida de datos. Cada caja tiene una etiqueta y un &aacute;rea que
+se usa para mostrar un valor del tipo Integer, Float, o String</li>
+  <li>Un boton de "OK" mediante el que el usuario indica que ha
+terminado de
+visualizar los datos</li>
+  <li>Un bot&oacute;n "Cancelar" que cierra la aplicaci&oacute;n.</li>
+</ul>
+La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/Escritura.html">Escritura.java</a>.
+<p>Un ejemplo del uso de esta clase se puede encontrar en: <a
+ href="PruebaLecturaEscritura.java.html">Ejemplo
+con Lectura/Escritura</a>.
+</p>
+<p>Resumen de las operaciones de Escritura.java:
+<br>
+&nbsp;
+<table width="100%" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>&nbsp; new Escritura (titulo)</td>
+      <td>Constructor que crea el objeto con su t&iacute;tulo</td>
+    </tr>
+    <tr>
+      <td>&nbsp; insertaValor (etiqueta, valor)</td>
+      <td>Crea una caja con la etiqueta y valor indicados</td>
+    </tr>
+    <tr>
+      <td>&nbsp;espera()</td>
+      <td>Espera a que se pulse el bot&oacute;n OK y cierra la ventana.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+&nbsp;
+</p>
+<h1><a name="4."></a>4. Mensaje</h1>
+Los objetos de la clase Mensaje proporcionan:
+<ul>
+  <li>Una etiqueta con el mensaje especificado por el usuario</li>
+  <li>Un boton de "OK" mediante el que el usuario indica que ha
+terminado de
+visualizar el mensaje</li>
+</ul>
+La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/Mensaje.html">Mensaje.java</a>.
+<p>Un ejemplo del uso de esta clase se puede encontrar en: <a
+ href="PruebaMensaje.java.html">Ejemplo
+con Mensaje</a>.
+</p>
+<p>Resumen de las operaciones de Mensaje.java:
+<br>
+&nbsp;
+<table width="100%" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>&nbsp;new Mensaje ()</td>
+      <td>Crea el objeto</td>
+    </tr>
+    <tr>
+      <td>&nbsp;new Mensaje (string)</td>
+      <td>Crea el objeto con el t&iacute;tulo indicado</td>
+    </tr>
+    <tr>
+      <td>&nbsp;escribe (string)</td>
+      <td>Muestra el mensaje y espera a que se pulse el bot&oacute;n OK<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<h1><a name="mensajesino"></a>5. MensajeSiNo</h1>
+Los objetos de la clase MensajeSiNo proporcionan:<br>
+<ul>
+  <li>Un texto especificado por el usuario para hacer una pregunta</li>
+  <li>Dos botones etiquetados "Si" y "No"&nbsp; para que el usuario
+pueda seleccionar su respuesta</li>
+</ul>
+La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/MensajeSiNo.html">MensajeSiNo.java</a><br>
+<br>
+Un ejemplo del uso de esta clase se puede encontrar en <a
+ href="PruebaMensajeSiNo.java.html">Ejemplo con MensajeSiNo</a><br>
+<br>
+Resumen de las operaciones de MensajeSiNo.java:<br>
+<br>
+<table width="100%" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>&nbsp;new MensajeSiNo ()</td>
+      <td>Crea el objeto</td>
+    </tr>
+    <tr>
+      <td>&nbsp;new MensajeSiNo (String)</td>
+      <td>Crea el objeto con el t&iacute;tulo indicado</td>
+    </tr>
+    <tr>
+      <td>&nbsp;boolean pregunta (String)</td>
+      <td>Muestra el mensaje, espera a que se pulse el bot&oacute;n "Si
+o "No" y retorna true si el bot&oacute;n pusado fue "Si" y false si fue
+"No"<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<h1><a name="5."></a>6. Menu</h1>
+Los objetos de la clase Menu proporcionan un conjunto de botones para
+elegir
+entre una serie de ociones. Tambi&eacute;n proporcionan una
+operaci&oacute;n
+para que la aplicaci&oacute;n espere a que se pulse uno de los botones,
+y obtenga el c&oacute;digo entero asociado a ese bot&oacute;n.
+<p>La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/Menu.html">Menu.java</a>.
+</p>
+<p>Un ejemplo del uso de esta clase se puede encontrar en: <a
+ href="PruebaMenu.java.html">Ejemplo
+con Menu</a>.
+</p>
+<p>Resumen de las operaciones de Menu.java:
+<br>
+&nbsp;
+<table width="100%" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>new Menu (titulo)</td>
+      <td>Crea el objeto Menu con su t&iacute;tulo</td>
+    </tr>
+    <tr>
+      <td>println (string)</td>
+      <td>Muestra un string en la cabecera</td>
+    </tr>
+    <tr>
+      <td>insertaOpcion (nombre, codigo)</td>
+      <td>Crea un bot&oacute;n con el nombre y c&oacute;digo indicado</td>
+    </tr>
+    <tr>
+      <td>int leeOpcion ()</td>
+      <td>Espera a que se pulse un bot&oacute;n, y retorna el
+c&oacute;digo del
+bot&oacute;n pulsado</td>
+    </tr>
+    <tr>
+      <td>int leeOpcion (mensaje)</td>
+      <td>Muestra un mensaje, espera a que se pulse un bot&oacute;n, y
+retorna
+el c&oacute;digo del bot&oacute;n pulsado.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">void cierra()<br>
+      </td>
+      <td style="vertical-align: top;">Cierra la ventana<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<h1><a name="6."></a>7. Dibujo</h1>
+Los objetos de la clase Dibujo proporcionan una ventana donde se pueden
+dibujar figuras simples e im&aacute;genes:
+<ul>
+  <li>&nbsp;puntos</li>
+  <li>&nbsp;rectas</li>
+  <li>&nbsp;poligonos abiertos y cerrados</li>
+  <li>&nbsp;circulos y elipses</li>
+  <li>&nbsp;rectangulos</li>
+  <li>&nbsp;arcos circulares</li>
+  <li>&nbsp;texto</li>
+  <li>&nbsp;imagenes</li>
+</ul>
+Tambi&eacute;n proporcionan un bot&oacute;n OK para esperar a que el
+usuario
+visulaice el dibujo, y un bot&oacute;n "Cancelar" que finaliza la
+aplicaci&oacute;n.
+<p>Adem&aacute;s de las operaciones de dibujar, la clase Dibujo tiene
+otras
+para modificar los atributos de los dibujos que se pinten a
+continuaci&oacute;n:
+</p>
+<ul>
+  <li>Grosor del l&aacute;piz</li>
+  <li>Color del l&aacute;piz</li>
+  <li>Color del relleno, en figuras cerradas</li>
+  <li>Tama&ntilde;o de letra</li>
+</ul>
+Los colores son objetos de la clase <a
+ href="javadocs/fundamentos/ColorFig.html">ColorFig</a>.
+Esta clase tiene operaciones para crear y modificar colores, as&iacute;
+como constantes con los colores m&aacute;s usuales.
+<p>La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/Dibujo.html">Dibujo.java</a>.
+</p>
+<p>Un ejemplo del uso de esta clase se puede encontrar en: <a
+ href="PruebaDibujo.java.html">Ejemplo
+con Dibujo</a>.
+</p>
+<p>Resumen de las operaciones de Dibujo.java:
+<br>
+&nbsp;
+<table width="100%" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>new&nbsp; Dibujo(titulo)</td>
+      <td>Constructor con tama&ntilde;o 640*480</td>
+    </tr>
+    <tr>
+      <td>new&nbsp; Dibujo(titulo,ancho,alto)</td>
+      <td>Constructor con tama&ntilde;o definible (en pixels)<br>
+      </td>
+    </tr>
+    <tr>
+      <td>espera()</td>
+      <td>Hace el dibujo y espera a que se pulse OK.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">pinta()<br>
+      </td>
+      <td style="vertical-align: top;">Hace el dibujo de forma
+inmediata, sin esperar<br>
+      </td>
+    </tr>
+    <tr>
+      <td>ponColorLapiz(color)</td>
+      <td>Pone el color del l&aacute;piz con el que se pinta.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">ponGrosorLapiz(grosor)<br>
+      </td>
+      <td style="vertical-align: top;">Pone el grosor del l&aacute;piz,
+en p&iacute;xeles<br>
+      </td>
+    </tr>
+    <tr>
+      <td>ponRelleno(color)</td>
+      <td>Pone el color del relleno de las figuras cerradas</td>
+    </tr>
+    <tr>
+      <td>ponLetra(tama&ntilde;o)</td>
+      <td>Pone el tama&ntilde;o de la letra del texto dibujado</td>
+    </tr>
+    <tr>
+      <td>borra()</td>
+      <td>Borra el dibujo poniendo el fondo gris claro.</td>
+    </tr>
+    <tr>
+      <td>borra(color)</td>
+      <td>Borra el dibujo poniendo el fondo del color indicado</td>
+    </tr>
+    <tr>
+      <td>dibujaTexto(texto, xOrigen, yOrigen) <br>
+dibujaPunto(x,y) <br>
+dibujaLinea(xOrigen,yOrigen,xDestino,yDestino) <br>
+dibujaLineas (x[],y[]); <br>
+dibujaRectangulo(x1,y1,x2,y2) <br>
+dibujaElipse(x1,y1,x2,y2) <br>
+dibujaArco(x1,y1,x2,y2,angulo1,angulo2); <br>
+dibujaPoligono(x[],y[]) <br>
+dibujaImagen(xOrigen,yOrigen,nombreFichero)</td>
+      <td>Operaciones de dibujar.</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<h1><a name="7."></a>8. Grafica</h1>
+Los objetos de la clase Grafica proporcionan un &aacute;rea para
+dibujar
+varias gr&aacute;ficas bidimensionales a partir de conjuntos de puntos.
+Tambi&eacute;n proporciona un bot&oacute;n OK para que el programa
+pueda
+esperar a que el usuario finalice de visualizar la gr&aacute;fica.
+<p>Cada gr&aacute;fica tiene un conjunto de puntos con los siguientes
+atributos:
+</p>
+<ul>
+  <li>T&iacute;tulo</li>
+  <li>Color</li>
+  <li>S&iacute;mbolo</li>
+  <li>Estilo de l&iacute;neas: determina si se pintan o no
+l&iacute;neas
+entre
+cada pareja de puntos sucesivos.</li>
+</ul>
+Se proporcionan operaciones para a&ntilde;adir puntos, o cambiar cada
+uno
+de los atributos. La operaci&oacute;n otraGrafica() se usa para
+finalizar
+la gr&aacute;fica actual y comenzar una nueva gr&aacute;fica sobre la
+misma
+ventana.
+<p>La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/Grafica.html">Grafica.java</a>.
+</p>
+<p>Un ejemplo del uso de esta clase se puede encontrar en: <a
+ href="PruebaGrafica.java.html">Ejemplo
+con Grafica</a>.
+</p>
+<p>Resumen de las operaciones de Grafica.java:
+<br>
+&nbsp;
+<table width="100%" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>new Grafica (TituloGrafica, TituloEjeX, TituloEjeY)</td>
+      <td>Constructor que pone los t&iacute;tulos</td>
+    </tr>
+    <tr>
+      <td>inserta(x, y)</td>
+      <td>Inserta un punto en la lista. Los puntos deben estar
+ordenados por
+el eje X</td>
+    </tr>
+    <tr>
+      <td>pinta()</td>
+      <td>Muestra los ejes y la gr&aacute;fica; luego, espera a que se
+pulse
+el bot&oacute;n OK y cierra la ventana</td>
+    </tr>
+    <tr>
+      <td>otraGrafica()</td>
+      <td>Comienza una nueva gr&aacute;fica con los mismos ejes. Se
+puede usar
+un unico pinta() para todas las gr&aacute;ficas</td>
+    </tr>
+    <tr>
+      <td>ponColor(int 0 a 3)</td>
+      <td>Se puede elegir negro, rosa, azul o rojo (hay constantes
+est&aacute;ticas
+disponibles para usar nombres en vez de numeros)</td>
+    </tr>
+    <tr>
+      <td>ponSimbolo(boolean)</td>
+      <td>Pone (o quita) los s&iacute;mbolos en la grafica actual. El
+s&iacute;mbolo
+se deduce del color .</td>
+    </tr>
+    <tr>
+      <td>ponLineas(boolean)</td>
+      <td>Quita o pone la opci&oacute;n de pintar la gr&aacute;fica con
+l&iacute;neas.
+Normalmente la opcion de l&iacute;neas est&aacute; activa&nbsp;</td>
+    </tr>
+    <tr>
+      <td>ponTitulo(String)</td>
+      <td>Pone el t&iacute;tulo de la gr&aacute;fica actual</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<h1><a name="8._CajaTexto"></a>9. <a name="CajaTexto"></a>CajaTexto</h1>
+Los objetos de la clase CajaTexto proporcionan:
+<ul>
+  <li>Un &aacute;rea para escribir texto multil&iacute;nea, con barras
+de desplazamiento, y que luego se puede leer l&iacute;nea a
+l&iacute;nea de varias maneras:</li>
+  <ul>
+    <li>Leer la l&iacute;nea como texto</li>
+    <li>Leer la l&iacute;nea como n&uacute;mero entero</li>
+    <li>Leer la l&iacute;nea como n&uacute;mero real</li>
+    <li>Lectura de numeros enteros o reales en columnas</li>
+  </ul>
+  <li>Un boton de "Aceptar" mediante el que el usuario indica que ha
+terminado
+de editar los datos</li>
+  <li>Un bot&oacute;n "Cancelar" que cierra la aplicaci&oacute;n.</li>
+</ul>
+La descripci&oacute;n de la clase est&aacute; en <a
+ href="javadocs/fundamentos/CajaTexto.html">CajaTexto.java</a>.
+<p>Un ejemplo del uso de esta clase se puede encontrar en: <a
+ href="PruebaCajaTexto.java.html">Ejemplo
+con Lectura/Escritura</a>.
+</p>
+Resumen de las operaciones de CajaTexto.java:
+<br>
+&nbsp;
+<table style="width: 100%;" border="1" cellpadding="4">
+  <tbody>
+    <tr>
+      <td style="width: 30%;">&nbsp;new CajaTexto (String s, <br>
+&nbsp;&nbsp; int filas, int columnas)</td>
+      <td>Constructor, con el t&iacute;tulo de la ventana, y las filas
+y columnas del &aacute;rea de texto (medidas en caracteres)<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 30%;">&nbsp;void espera ()</td>
+      <td>Espera a que el usuario teclee texto y
+pulse
+aceptar; se coloca en la primera l&iacute;nea del texto.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 30%;">&nbsp;void esperaYCierra ()</td>
+      <td>Igual que espera, pero ademas cierra la ventana al aceptar;
+se coloca en la primera l&iacute;nea del texto</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">void reinicia()<br>
+      </td>
+      <td style="vertical-align: top;">Se coloca en la primera
+l&iacute;nea del texto<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 30%;">boolean hayMas()<br>
+      </td>
+      <td>Retorna un booleano indicando si hay m&aacute;s lineas por
+leer o no<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 30%;">double leeDouble ()</td>
+      <td>Lee un double de la linea actual<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 30%;">int leeInt ()</td>
+      <td>Lee un int de la linea actual<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 30%;">String leeString ()</td>
+      <td>Lee un String de la linea actual<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 30%;">void avanzaLinea()<br>
+      </td>
+      <td style="vertical-align: top;">Avanza a la siguiente linea<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 30%;">double leeDouble
+(int pos)<br>
+      </td>
+      <td style="vertical-align: top;">Lectura de numeros en columna.
+Lee el double que ocupa la posicion pos en la linea actual; los
+n&uacute;meros se separan con espacios en blanco; el primer
+n&uacute;mero es el de pos=0.<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 30%;">int leeInt (int pos)</td>
+      <td style="vertical-align: top;">Lectura de numeros en columna.
+Lee el int que ocupa la posicion pos
+en la linea actual; los n&uacute;meros se separan con espacios en
+blanco; el
+primer n&uacute;mero es el de pos=0.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 30%;">void borra()<br>
+      </td>
+      <td style="vertical-align: top;">Borra el texto de la caja de
+texto<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">void println(String s)<br>
+      </td>
+      <td style="vertical-align: top;">A&ntilde;ade una linea con el
+texto indicado por 's' a la caja de texto<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h1>10.&nbsp;<a name="Changes"></a>Cambios respecto a versiones previas
+<br>
+</h1>
+
+<span style="font-weight: bold;">Versi&oacute;n 3.5:</span><br>
+<br>
+Se ha corregido el fallo por el que no se mostraba el título de la
+ventana en la clase Grafica.<br>
+<br>
+
+<span style="font-weight: bold;">Versi&oacute;n 3.4:</span><br>
+<br>
+Se ha modificado la clase Dibujo para permitir el acceso concurrente desde
+m&uacute;ltiples threads.<br>
+<br>
+Se ha mejorado la clase Grafica para que los r&oacute;tulos de los ejes
+queden dentro de la ventana y para a&ntilde;adir m&aacute;s informaci&oacute;n num&eacute;rica y
+gr&aacute;fica a los ejes.<br>
+<br>
+
+<span style="font-weight: bold;">Versi&oacute;n 3.3:</span><br>
+<br>
+Corregidas las excepciones de acceso concurrente al hacer dibujos animados
+con la clase Dibujo<br>
+<br>
+A&ntilde;adido un atributo para que el lienzo sea limitado o no. 
+Cuando el lienzo es limitado si se intenta dibujar fuera de él sale
+un mensaje de error. Si no es limitado, los elementos que estan fuera del
+dibujo se ignoran.<br>
+<br>
+<span style="font-weight: bold;">Versi&oacute;n 3.2:</span><br>
+<br>
+Corregido un fallo en Dibujo.java por el que las im&aacute;genes se
+pintaban con un tama&ntilde;o equivocado.<br>
+<br>
+<span style="font-weight: bold;">Versi&oacute;n 3.1:</span><br>
+<br>
+Se ha a&ntilde;adido la operacion pinta() a la clase Dibujo.java.<br>
+<br>
+<span style="font-weight: bold;">Versi&oacute;n 3:</span><br>
+<br>
+Se han modificado todas las clases para utilizar el kit gr&aacute;fico
+Swing de Java, en lugar del m&aacute;s antiguo awt.<br>
+<br>
+Se ha a&ntilde;adido la clase MensajeSiNo.<br>
+<br>
+<span style="font-weight: bold;">Versiones anteriores:</span><br>
+<br>
+Se ha a&ntilde;adido la operaci&oacute;n reinicia() en la clase
+CajaTexto<br>
+<br>
+Se ha corregido el m&eacute;todo de dibujar pol&iacute;gonos, que antes
+dibujaba mal los pol&iacute;gonos c&oacute;ncavos<br>
+<br>
+Se ha a&ntilde;adido la clase CajaTexto, para poder leer texto
+multil&iacute;nea<br>
+<br>
+Se ha corregido la descripci&oacute;n de los m&eacute;todos de la clase
+Dibujo, ya que hab&iacute;a algunos errores.<br>
+<br>
+Se ha adaptado la implementaci&oacute;n a la versi&oacute;n de Java
+1.5, que incluye gen&eacute;ricos.<br>
+<br>
+Se han a&ntilde;adido varios mensajes de error para facilitar el uso.<br>
+<br>
+La clase Grafica tiene ahora botones de OK y Cancelar, iguales a los de
+otras clases. La operaci&oacute;n pinta() se ha modificado para que
+espere
+al bot&oacute;n OK.
+<p>Se ha a&ntilde;adido la nueva clase Dibujo, con operaciones para
+hacer
+dibujos sencillos.</p>
+<h1>11.&nbsp;<a name="Installation"></a>Descarga e instalaci&oacute;n</h1>
+El paquete fundamentos require Java 8 (JDK standard edition 8),
+que puedes encontrar en <a href="http://java.sun.com/">java.sun.com</a>.
+<br>
+<br>
+En caso de usar <span style="font-style: italic;"><a
+ href="http://www.eclipse.org/">Eclipse</a> o <a
+ href="http://www.bluej.org/">Bluej</a> </span>se recomienda hacer 
+la descarga e instalaci&oacute;n a partir de los siguientes
+enlaces:<br>
+<ul>
+  <li>Fuentes y clases compiladas, en formato "jar": <a
+ href="fundamentos.jar">fundamentos.jar</a></li>
+  <li>Documentaci&oacute;n, en formato Zip: <a
+ href="fundamentos-docs.zip">fundamentos-docs.zip</a><br>
+  </li>
+</ul>
+<div style="margin-left: 40px;">Si utilizas el <a
+ href="http://www.bluej.org/">Bluej</a> como
+entorno de desarrollo, hay que a&ntilde;adir el fichero fundamentos.jar
+a las librer&iacute;as. Para ello elige la
+opci&oacute;n del men&uacute; <span style="font-weight: bold;">tools=&gt;preferences,</span>
+y en la pesta&ntilde;a <span style="font-weight: bold;">Libraries</span>
+usa el bot&oacute;n <span style="font-weight: bold;">add </span>para
+a&ntilde;adir el fichero. Posteriormente hay que reiniciar el bluej.<br>
+</div>
+<br>
+Para descargar el paquete fundamentos para otros entornos, seguir este enlace:
+<ul>
+  <li>Fuentes y documentos (<a href="fundamentos.zip">fundamentos.zip</a>)</li>
+</ul>
+<div style="margin-left: 40px;">Descarga el&nbsp; fichero elegido y
+descomprimelo en un directorio de tu elecci&oacute;n
+(directorio-instalacion).
+Esto crear&aacute; un subdirectorio llamado "fundamentos" dentro de
+directorio-instalacion.
+Acordarse de poner el "directorio-instalacion" en la variable CLASSPATH
+que usa el compilador para encontrar las clases.<br>
+<br>
+</div>
+<br>
+<p>&nbsp;
+</p>
+</body>
+</html>

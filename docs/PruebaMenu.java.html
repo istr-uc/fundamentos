@@ -1,0 +1,28 @@
+<pre>
+<tt>
+<b><font color=#000080>import</font></b> fundamentos<font color=#990000>.</font><font color=#990000>*</font><font color=#990000>;</font>
+<b><font color=#0000FF>public</font></b> <b><font color=#0000FF>class</font></b> PruebaMenu <font color=#FF0000>{</font>
+
+   <b><font color=#0000FF>public</font></b> <b><font color=#0000FF>static</font></b> <font color=#009900>void</font> <b><font color=#000000>main</font></b> <font color=#990000>(</font>String<font color=#990000>[</font><font color=#990000>]</font> args<font color=#990000>)</font> <font color=#FF0000>{</font>
+
+      Menu menu<font color=#990000>=</font> <b><font color=#0000FF>new</font></b> <b><font color=#000000>Menu</font></b><font color=#990000>(</font><font color=#FF0000>"Prueba de Menu"</font><font color=#990000>)</font><font color=#990000>;</font>
+      <font color=#009900>int</font> op<font color=#990000>;</font>
+
+      menu<font color=#990000>.</font><b><font color=#000000>insertaOpcion</font></b><font color=#990000>(</font><font color=#FF0000>"Insertar libro"</font><font color=#990000>,</font><font color=#993399>1</font><font color=#990000>)</font><font color=#990000>;</font>
+      menu<font color=#990000>.</font><b><font color=#000000>insertaOpcion</font></b><font color=#990000>(</font><font color=#FF0000>"Borrar libro"</font><font color=#990000>,</font><font color=#993399>2</font><font color=#990000>)</font><font color=#990000>;</font>
+      menu<font color=#990000>.</font><b><font color=#000000>insertaOpcion</font></b><font color=#990000>(</font><font color=#FF0000>"Prestar libro"</font><font color=#990000>,</font><font color=#993399>3</font><font color=#990000>)</font><font color=#990000>;</font>
+      menu<font color=#990000>.</font><b><font color=#000000>insertaOpcion</font></b><font color=#990000>(</font><font color=#FF0000>"Modificar libro"</font><font color=#990000>,</font><font color=#993399>4</font><font color=#990000>)</font><font color=#990000>;</font>
+      menu<font color=#990000>.</font><b><font color=#000000>insertaOpcion</font></b><font color=#990000>(</font><font color=#FF0000>"Salir"</font><font color=#990000>,</font><font color=#993399>5</font><font color=#990000>)</font><font color=#990000>;</font>
+      <b><font color=#0000FF>do</font></b> <font color=#FF0000>{</font>
+         op<font color=#990000>=</font>menu<font color=#990000>.</font><b><font color=#000000>leeOpcion</font></b><font color=#990000>(</font><font color=#FF0000>"Elige una opcion"</font><font color=#990000>)</font><font color=#990000>;</font>
+
+         Mensaje men <font color=#990000>=</font> <b><font color=#0000FF>new</font></b> <b><font color=#000000>Mensaje</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+         men<font color=#990000>.</font><b><font color=#000000>escribe</font></b><font color=#990000>(</font><font color=#FF0000>"La opcion leida es "</font><font color=#990000>+</font>op<font color=#990000>)</font><font color=#990000>;</font>
+      <font color=#FF0000>}</font> <b><font color=#0000FF>while</font></b> <font color=#990000>(</font>op<font color=#990000>!</font><font color=#990000>=</font><font color=#993399>5</font><font color=#990000>)</font><font color=#990000>;</font>
+      menu<font color=#990000>.</font><b><font color=#000000>cierra</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font><b><font color=#000000>exit</font></b><font color=#990000>(</font><font color=#993399>0</font><font color=#990000>)</font><font color=#990000>;</font>
+   <font color=#FF0000>}</font>
+
+<font color=#FF0000>}</font>
+</tt>
+</pre>

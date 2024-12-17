@@ -1,0 +1,37 @@
+<pre>
+<tt>
+<b><font color=#000080>import</font></b> fundamentos<font color=#990000>.</font><font color=#990000>*</font><font color=#990000>;</font>
+<b><font color=#0000FF>public</font></b> <b><font color=#0000FF>class</font></b> PruebaGrafica <font color=#FF0000>{</font>
+
+   <b><font color=#0000FF>public</font></b> <b><font color=#0000FF>static</font></b> <font color=#009900>void</font> <b><font color=#000000>main</font></b> <font color=#990000>(</font>String<font color=#990000>[</font><font color=#990000>]</font> args<font color=#990000>)</font> <font color=#FF0000>{</font>
+
+      Grafica g <font color=#990000>=</font> <b><font color=#0000FF>new</font></b> <b><font color=#000000>Grafica</font></b> <font color=#990000>(</font><font color=#FF0000>"Seno y Coseno"</font><font color=#990000>,</font><font color=#FF0000>"x"</font><font color=#990000>,</font><font color=#FF0000>"y"</font><font color=#990000>)</font><font color=#990000>;</font>
+      <font color=#009900>double</font> x<font color=#990000>;</font>
+
+      <font color=#009900>float</font> r<font color=#990000>=</font><font color=#993399>6.0</font>f<font color=#990000>;</font>
+
+      <i><font color=#9A1900>// El primer grafico</font></i>
+      g<font color=#990000>.</font><b><font color=#000000>ponSimbolo</font></b><font color=#990000>(</font>true<font color=#990000>)</font><font color=#990000>;</font>
+      g<font color=#990000>.</font><b><font color=#000000>ponColor</font></b><font color=#990000>(</font>Grafica<font color=#990000>.</font>azul<font color=#990000>)</font><font color=#990000>;</font>
+      g<font color=#990000>.</font><b><font color=#000000>ponTitulo</font></b><font color=#990000>(</font><font color=#FF0000>"Seno"</font><font color=#990000>)</font><font color=#990000>;</font>
+      <b><font color=#0000FF>for</font></b> <font color=#990000>(</font><font color=#009900>int</font> i<font color=#990000>=</font><font color=#993399>0</font><font color=#990000>;</font> i<font color=#990000>&lt;</font><font color=#990000>=</font><font color=#993399>100</font><font color=#990000>;</font> i<font color=#990000>+</font><font color=#990000>+</font><font color=#990000>)</font> <font color=#FF0000>{</font>
+	 x <font color=#990000>=</font> i<font color=#990000>/</font><font color=#993399>10.0</font><font color=#990000>;</font>
+	 g<font color=#990000>.</font><b><font color=#000000>inserta</font></b><font color=#990000>(</font>x<font color=#990000>,</font>Math<font color=#990000>.</font><b><font color=#000000>sin</font></b><font color=#990000>(</font>x<font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      <font color=#FF0000>}</font>
+
+      <i><font color=#9A1900>// El segundo grafico</font></i>
+      g<font color=#990000>.</font><b><font color=#000000>otraGrafica</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      g<font color=#990000>.</font><b><font color=#000000>ponColor</font></b><font color=#990000>(</font>Grafica<font color=#990000>.</font>rojo<font color=#990000>)</font><font color=#990000>;</font>
+      g<font color=#990000>.</font><b><font color=#000000>ponTitulo</font></b><font color=#990000>(</font><font color=#FF0000>"Coseno"</font><font color=#990000>)</font><font color=#990000>;</font>
+      <b><font color=#0000FF>for</font></b> <font color=#990000>(</font><font color=#009900>int</font> i<font color=#990000>=</font><font color=#993399>0</font><font color=#990000>;</font> i<font color=#990000>&lt;</font><font color=#990000>=</font><font color=#993399>100</font><font color=#990000>;</font> i<font color=#990000>+</font><font color=#990000>+</font><font color=#990000>)</font> <font color=#FF0000>{</font>
+	 x <font color=#990000>=</font> i<font color=#990000>/</font><font color=#993399>10.0</font><font color=#990000>;</font>
+	 g<font color=#990000>.</font><b><font color=#000000>inserta</font></b><font color=#990000>(</font>x<font color=#990000>,</font>Math<font color=#990000>.</font><b><font color=#000000>cos</font></b><font color=#990000>(</font>x<font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      <font color=#FF0000>}</font>
+      g<font color=#990000>.</font><b><font color=#000000>pinta</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+
+      System<font color=#990000>.</font><b><font color=#000000>exit</font></b><font color=#990000>(</font><font color=#993399>0</font><font color=#990000>)</font><font color=#990000>;</font>
+   <font color=#FF0000>}</font>
+
+<font color=#FF0000>}</font>
+</tt>
+</pre>

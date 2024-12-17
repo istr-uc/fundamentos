@@ -1,0 +1,40 @@
+<pre>
+<tt>
+<b><font color=#000080>import</font></b> fundamentos<font color=#990000>.</font><font color=#990000>*</font><font color=#990000>;</font>
+<b><font color=#0000FF>public</font></b> <b><font color=#0000FF>class</font></b> PruebaCajaTexto <font color=#FF0000>{</font>
+
+   <b><font color=#0000FF>public</font></b> <b><font color=#0000FF>static</font></b> <font color=#009900>void</font> <b><font color=#000000>main</font></b> <font color=#990000>(</font>String<font color=#990000>[</font><font color=#990000>]</font> args<font color=#990000>)</font> <font color=#FF0000>{</font>
+
+      CajaTexto caja <font color=#990000>=</font> <b><font color=#0000FF>new</font></b> <b><font color=#000000>CajaTexto</font></b> <font color=#990000>(</font><font color=#FF0000>"Prueba de Caja de Texto"</font><font color=#990000>,</font><font color=#993399>20</font><font color=#990000>,</font><font color=#993399>50</font><font color=#990000>)</font><font color=#990000>;</font>
+
+      caja<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"Escribe un numero entero, un real, y varias lineas"</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>espera</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"primera linea="</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeString</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>avanzaLinea</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"num entero   ="</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeInt</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>avanzaLinea</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"num real     ="</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeDouble</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>avanzaLinea</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      <b><font color=#0000FF>while</font></b> <font color=#990000>(</font>caja<font color=#990000>.</font><b><font color=#000000>hayMas</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>)</font> <font color=#FF0000>{</font>
+	System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"linea ="</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeString</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+	caja<font color=#990000>.</font><b><font color=#000000>avanzaLinea</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+	System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"   hay mas="</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>hayMas</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      <font color=#FF0000>}</font>
+      caja<font color=#990000>.</font><b><font color=#000000>borra</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"Ahora mete una linea con dos enteros"</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"y otra con dos reales, y pulsa aceptar"</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>esperaYCierra</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>avanzaLinea</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>avanzaLinea</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"Entero 1: "</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeInt</font></b><font color=#990000>(</font><font color=#993399>0</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"Entero 2: "</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeInt</font></b><font color=#990000>(</font><font color=#993399>1</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      caja<font color=#990000>.</font><b><font color=#000000>avanzaLinea</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"Real   1: "</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeDouble</font></b><font color=#990000>(</font><font color=#993399>0</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font>out<font color=#990000>.</font><b><font color=#000000>println</font></b><font color=#990000>(</font><font color=#FF0000>"Real   2: "</font><font color=#990000>+</font>caja<font color=#990000>.</font><b><font color=#000000>leeDouble</font></b><font color=#990000>(</font><font color=#993399>1</font><font color=#990000>)</font><font color=#990000>)</font><font color=#990000>;</font>
+      
+      System<font color=#990000>.</font><b><font color=#000000>exit</font></b><font color=#990000>(</font><font color=#993399>0</font><font color=#990000>)</font><font color=#990000>;</font>
+   <font color=#FF0000>}</font>
+
+<font color=#FF0000>}</font>
+</tt>
+</pre>

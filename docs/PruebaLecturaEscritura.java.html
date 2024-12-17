@@ -1,0 +1,33 @@
+<pre>
+<tt>
+<b><font color=#000080>import</font></b> fundamentos<font color=#990000>.</font><font color=#990000>*</font><font color=#990000>;</font>
+<b><font color=#0000FF>public</font></b> <b><font color=#0000FF>class</font></b> PruebaLecturaEscritura <font color=#FF0000>{</font>
+
+   <b><font color=#0000FF>public</font></b> <b><font color=#0000FF>static</font></b> <font color=#009900>void</font> <b><font color=#000000>main</font></b> <font color=#990000>(</font>String<font color=#990000>[</font><font color=#990000>]</font> args<font color=#990000>)</font> <font color=#FF0000>{</font>
+
+      Lectura lec <font color=#990000>=</font> <b><font color=#0000FF>new</font></b> <b><font color=#000000>Lectura</font></b> <font color=#990000>(</font><font color=#FF0000>"Prueba de Lectura"</font><font color=#990000>)</font><font color=#990000>;</font>
+
+      <font color=#009900>int</font> i<font color=#990000>;</font>
+      <font color=#009900>double</font> d<font color=#990000>;</font>
+      String s<font color=#990000>;</font>
+
+      lec<font color=#990000>.</font><b><font color=#000000>creaEntrada</font></b><font color=#990000>(</font><font color=#FF0000>"Nombre"</font><font color=#990000>,</font><font color=#FF0000>"Pedro Lacasa..................."</font><font color=#990000>)</font><font color=#990000>;</font>
+      lec<font color=#990000>.</font><b><font color=#000000>creaEntrada</font></b><font color=#990000>(</font><font color=#FF0000>"Edadeeeeeeeeeeeeeeeeeeeeeeeeeeees"</font><font color=#990000>,</font><font color=#993399>37</font><font color=#990000>)</font><font color=#990000>;</font>
+      lec<font color=#990000>.</font><b><font color=#000000>creaEntrada</font></b><font color=#990000>(</font><font color=#FF0000>"Capacidad pulmonar (l)"</font><font color=#990000>,</font><font color=#993399>4.3</font><font color=#990000>)</font><font color=#990000>;</font>
+      lec<font color=#990000>.</font><b><font color=#000000>esperaYCierra</font></b><font color=#990000>(</font><font color=#FF0000>"Introduce datos y pulsa aceptar"</font><font color=#990000>)</font><font color=#990000>;</font>
+      s<font color=#990000>=</font>lec<font color=#990000>.</font><b><font color=#000000>leeString</font></b><font color=#990000>(</font><font color=#FF0000>"Nombre"</font><font color=#990000>)</font><font color=#990000>;</font>
+      i<font color=#990000>=</font>lec<font color=#990000>.</font><b><font color=#000000>leeInt</font></b><font color=#990000>(</font><font color=#FF0000>"Edadeeeeeeeeeeeeeeeeeeeeeeeeeeees"</font><font color=#990000>)</font><font color=#990000>;</font>
+      d<font color=#990000>=</font>lec<font color=#990000>.</font><b><font color=#000000>leeDouble</font></b><font color=#990000>(</font><font color=#FF0000>"Capacidad pulmonar (l)"</font><font color=#990000>)</font><font color=#990000>;</font>
+
+      Escritura esc <font color=#990000>=</font> <b><font color=#0000FF>new</font></b> <b><font color=#000000>Escritura</font></b> <font color=#990000>(</font><font color=#FF0000>"Prueba de Escritura"</font><font color=#990000>)</font><font color=#990000>;</font>
+
+      esc<font color=#990000>.</font><b><font color=#000000>insertaValor</font></b><font color=#990000>(</font><font color=#FF0000>"Nombre"</font><font color=#990000>,</font>s<font color=#990000>)</font><font color=#990000>;</font>
+      esc<font color=#990000>.</font><b><font color=#000000>insertaValor</font></b><font color=#990000>(</font><font color=#FF0000>"Edadeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees"</font><font color=#990000>,</font>i<font color=#990000>)</font><font color=#990000>;</font>
+      esc<font color=#990000>.</font><b><font color=#000000>insertaValor</font></b><font color=#990000>(</font><font color=#FF0000>"Capacidad pulmonar (l)"</font><font color=#990000>,</font>d<font color=#990000>)</font><font color=#990000>;</font>
+      esc<font color=#990000>.</font><b><font color=#000000>espera</font></b><font color=#990000>(</font><font color=#990000>)</font><font color=#990000>;</font>
+      System<font color=#990000>.</font><b><font color=#000000>exit</font></b><font color=#990000>(</font><font color=#993399>0</font><font color=#990000>)</font><font color=#990000>;</font>
+   <font color=#FF0000>}</font>
+
+<font color=#FF0000>}</font>
+</tt>
+</pre>
