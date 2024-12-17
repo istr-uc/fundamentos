@@ -2,13 +2,40 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <name>fundamentos</name>
-  <url>https://www.istr.unican.es/fundamentos/</url>
-
   <groupId>es.unican.istr</groupId>
   <artifactId>fundamentos</artifactId>
-  <version>3.5-SNAPSHOT</version>
+  <version>3.5</version>
   <packaging>jar</packaging>
+
+  <name>fundamentos</name>
+  <url>https://www.istr.unican.es/fundamentos/</url>
+  <description>
+    El paquete fundamentos es un conjunto de clases para entrada/salida gráfica.
+    Está diseñado para principiantes de Java que no desean gastar mucho tiempo en aprender la interfaz
+    gráfica completa de java, pero que quieren poder hacer programas vistosos con entrada/salida gráfica.
+  </description>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License, Version 3.0</name>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mgh</id>
+      <name>Michael González Harbour</name>
+      <email>mgn@unican.es</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:istr-uc/fundamentos.git</connection>
+    <developerConnection>scm:git@github.com:istr-uc/fundamentos.git</developerConnection>
+    <url>https://github.com/istr-uc/fundamentos</url>
+  </scm>
+
+
 
   <dependencies>
     <dependency>
